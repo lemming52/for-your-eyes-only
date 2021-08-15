@@ -27,7 +27,8 @@ SCORE_COLUMNS = [
 FILES = [
     "Dr. No (1962)",
     "From Russia With Love (1963)",
-    "Goldfinger (1964)"
+    "Goldfinger (1964)",
+    "Thunderball (1965)"
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
