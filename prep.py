@@ -29,7 +29,8 @@ FILES = [
     "From Russia With Love (1963)",
     "Goldfinger (1964)",
     "Thunderball (1965)",
-    "You Only Live Twice (1967)"
+    "You Only Live Twice (1967)",
+    "On Her Majesty's Secret Service (1969)"
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
