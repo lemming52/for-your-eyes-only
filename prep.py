@@ -30,7 +30,9 @@ FILES = [
     "Goldfinger (1964)",
     "Thunderball (1965)",
     "You Only Live Twice (1967)",
-    "On Her Majesty's Secret Service (1969)"
+    "On Her Majesty's Secret Service (1969)",
+    "Diamonds are Forever (1971)",
+    "Live and Let Die (1973)"
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
@@ -59,7 +61,7 @@ def plot_attribute_across_film(films: Dict[str, pd.DataFrame], attribute: str) -
     indices = np.arange(len(films))
     plt.bar(indices - 0.075, means, label='mean', alpha=0.5, color=COLOURS['A'], width=0.15)
     plt.bar(indices + 0.075, medians, label='median', alpha=0.5, color=COLOURS['C'], width=0.15)
-    plt.xticks(indices, labels, fontsize=14, rotation=45)
+    plt.xticks(indices, labels, fontsize=12, rotation=90)
     plt.title(attribute)
     plt.ylabel('Count')
     plt.legend()
