@@ -32,7 +32,8 @@ FILES = [
     "You Only Live Twice (1967)",
     "On Her Majesty's Secret Service (1969)",
     "Diamonds are Forever (1971)",
-    "Live and Let Die (1973)"
+    "Live and Let Die (1973)",
+    "The Man with the Golden Gun (1974)"
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
@@ -78,7 +79,7 @@ def plot_multiple_attributes(films: Dict[str, pd.DataFrame], attributes: List[st
     indices = np.arange(len(films))
     for a in attributes:
         plt.plot(indices, values[a], '+-', label=f"{a}:{value}", markersize=12, markeredgecolor='k')
-    plt.xticks(indices, labels, fontsize=14, rotation=45)
+    plt.xticks(indices, labels, fontsize=14, rotation=90)
     plt.title(', '.join(attributes))
     plt.ylabel('Count')
     plt.legend()
