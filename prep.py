@@ -33,7 +33,10 @@ FILES = [
     "On Her Majesty's Secret Service (1969)",
     "Diamonds are Forever (1971)",
     "Live and Let Die (1973)",
-    "The Man with the Golden Gun (1974)"
+    "The Man with the Golden Gun (1974)",
+    "The Spy Who Loved Me (1977)",
+    "Moonraker (1979)",
+    "For Your Eyes Only (1981)",
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
