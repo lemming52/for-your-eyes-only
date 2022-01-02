@@ -37,6 +37,10 @@ FILES = [
     "The Spy Who Loved Me (1977)",
     "Moonraker (1979)",
     "For Your Eyes Only (1981)",
+    "Octopussy (1983)",
+    "A View to a Kill (1985)",
+    "The Living Daylights (1987)",
+    "License to Kill (1989)",
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
