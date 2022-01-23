@@ -41,6 +41,9 @@ FILES = [
     "A View to a Kill (1985)",
     "The Living Daylights (1987)",
     "License to Kill (1989)",
+    "Goldeneye (1995)",
+    "Tomorrow Never Dies (1997)",
+    "The World Is Not Enough (1999)",
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
