@@ -44,6 +44,15 @@ FILES = [
     "Goldeneye (1995)",
     "Tomorrow Never Dies (1997)",
     "The World Is Not Enough (1999)",
+    "Die Another Day (2002)",
+]
+
+ACTORS = [4, 5, 6, 13, 15, len(FILES)-1]
+ACTOR_COLOURS = [0, 1, 0, 2, 3, 4]
+COLOUR_SET = [
+    COLOURS['A+'],
+    COLOURS['D+'],
+    COLOURS['F+'],
 ]
 
 def prep_film(filepath: str) -> pd.DataFrame:
@@ -76,6 +85,10 @@ def plot_attribute_across_film(films: Dict[str, pd.DataFrame], attribute: str) -
     plt.title(attribute)
     plt.ylabel('Count')
     plt.legend()
+    prior = -1
+    for i, a in enumerate(ACTORS):
+        plt.axvspan(prior+0.5, a+0.5, color=COLOUR_SET[ACTOR_COLOURS[i]%len(COLOUR_SET)], alpha=0.1, lw=0)
+        prior = a
 
 
 def plot_multiple_attributes(films: Dict[str, pd.DataFrame], attributes: List[str], value: str) -> None:
@@ -93,3 +106,7 @@ def plot_multiple_attributes(films: Dict[str, pd.DataFrame], attributes: List[st
     plt.title(', '.join(attributes))
     plt.ylabel('Count')
     plt.legend()
+    prior = -1
+    for i, a in enumerate(ACTORS):
+        plt.axvspan(prior+0.5, a+0.5, color=COLOUR_SET[ACTOR_COLOURS[i]%len(COLOUR_SET)], alpha=0.1, lw=0)
+        prior = a
