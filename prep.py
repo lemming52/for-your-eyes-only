@@ -45,10 +45,12 @@ FILES = [
     "Tomorrow Never Dies (1997)",
     "The World Is Not Enough (1999)",
     "Die Another Day (2002)",
+    "Casino Royale (2006)",
+    "Quantum of Solace (2008)"
 ]
 
-ACTORS = [4, 5, 6, 13, 15, len(FILES)-1]
-ACTOR_COLOURS = [0, 1, 0, 2, 3, 4]
+ACTORS = [4, 5, 6, 13, 15, 19, len(FILES)-1]
+ACTOR_COLOURS = [0, 1, 0, 2, 3, 4, 5]
 COLOUR_SET = [
     COLOURS['A+'],
     COLOURS['D+'],
