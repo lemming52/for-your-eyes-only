@@ -46,7 +46,8 @@ FILES = [
     "The World Is Not Enough (1999)",
     "Die Another Day (2002)",
     "Casino Royale (2006)",
-    "Quantum of Solace (2008)"
+    "Quantum of Solace (2008)",
+    "Skyfall (2012)"
 ]
 
 ACTORS = [4, 5, 6, 13, 15, 19, len(FILES)-1]
