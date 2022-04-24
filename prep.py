@@ -40,7 +40,7 @@ FILES = [
     "Octopussy (1983)",
     "A View to a Kill (1985)",
     "The Living Daylights (1987)",
-    "License to Kill (1989)",
+    "Licence to Kill (1989)",
     "Goldeneye (1995)",
     "Tomorrow Never Dies (1997)",
     "The World Is Not Enough (1999)",
@@ -49,6 +49,7 @@ FILES = [
     "Quantum of Solace (2008)",
     "Skyfall (2012)",
     "Spectre (2015)",
+    "No Time to Die (2021)"
 ]
 
 ACTORS = [4, 5, 6, 13, 15, 19, len(FILES)-1]
